@@ -16,7 +16,7 @@ const Invoices = () => {
       {
         invoiceList.map(item => {
           const {name, number} = item || {};
-          return <li key={number}><Link to={`/${number}`}>{name}</Link></li>
+          return <li key={number}><Link to={`${number}`}>{name}</Link></li>
         })
       }
     </ul>
